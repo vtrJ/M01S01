@@ -1,0 +1,16 @@
+body{
+    
+    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #000000
+}
+
+p {
+    font-size: 14px;
+    color: #000000
+}

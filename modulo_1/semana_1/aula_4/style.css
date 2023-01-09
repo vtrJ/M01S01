@@ -1,0 +1,46 @@
+html,
+body,
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h2 {
+    margin:30px;
+    border: 3px solid green;
+    padding: 6px;
+}
+
+/* Exemplo de seletor por "id" */
+#subtitulo {
+
+ /*Exemplo de priorizacao de estilo com important*/
+    background-color: #7fffd4 !important;
+}
+
+/*Exemplo de seletor por "class"*/
+.destaque {
+    background-color: #ffff00;
+}
+
+/*Exemplo de seletor por "class" com elemento especifico*/
+.destaque span {
+    background-color: #00ff00;
+}
+
+/*Exemplo de seletor por "class" com elemento "span" dentro de outro elemento "span" especifico*/
+.destaque span span {
+    background-color: #0000ff;
+}
+
+/*Prioridade para selecao de cores, onde P - filho direto de LI - LI filho direto de UL e
+especificado que na busca de UL queremos a id lista*/
+ul#lista>li>p{
+    color: #008000;
+}

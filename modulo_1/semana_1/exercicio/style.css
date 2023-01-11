@@ -1,24 +1,87 @@
-body{
-    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+body,
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    
+    background-repeat: no-repeat;
+    
+    min-height: 100vh;
+
 }
 
-h1 {
-    text-align: center;
+.page {
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;  
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px;
+
+    background-color: #ffffff34;
+    border-radius: 8px;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 48px;
+    list-style: none;
+}
+
+ul li a:hover{
+    font-weight: bold;
+}
+
+ul li a{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    color: #000000
+    color: #dc143c;
+
+    text-align: center;
 }
 
-p {
+
+main p{
     font-size: 14px;
-    color: #000000
+
+    text-align: center;
 }
 
-#botao {
+main a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a#botao img{
+    height: 50px;
+}
+
+a#botao button{
     padding: 10px;
-    border: 2px solid #000000;
+    border: solid 2px;
+    border-color: #000;
     margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-}   
+
+    cursor: pointer;
+}
+
+a#botao button:hover{
+    background-color: #ff4646
+}

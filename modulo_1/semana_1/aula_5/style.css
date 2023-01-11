@@ -1,0 +1,22 @@
+html,
+body,
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html{
+    font-family: sans-serif;
+}
+
+#flex-box-container {
+    width: 100vw;
+    height: 50vh;
+    background-color: #faebd7;
+}
+
+#flex-item {
+    width: 100px;
+    height: 100px;
+    background-color: #a52a2a;
+}

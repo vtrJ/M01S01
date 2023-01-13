@@ -1,32 +1,52 @@
+html,
 body,
-html{
+div,
+main,
+html,
+footer{
     margin: 0;
     padding: 0;
     border: 0;
-    
-    background-color: #F4D03F;
-    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
-    
-    background-repeat: no-repeat;
-    
-    min-height: 100vh;
-
+    box-sizing: border-box;
 }
 
-.page {
-    margin: 0 auto;
+body{
+    min-height: 100vh;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 nav{
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;  
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 3px;
+    padding: 0 10px;
+    height: 40px;
+    position: fixed;
 
-    background-color: #ffffff34;
-    border-radius: 8px;
+    background: #000000;
+}
 
+div#imagens{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+div#imagens img{
+    width: calc(100% / 3);
+    display: block;
+}
+
+
+main{
+    padding: 0 20px 40px;
+    flex-grow: 1;
 }
 
 ul {
@@ -37,35 +57,42 @@ ul {
     list-style: none;
 }
 
-ul li a:hover{
-    font-weight: bold;
-}
-
 ul li a{
     font-family: sans-serif;
     text-decoration: none;
-    color: #000;
 }
+
+li a{
+    display: flex;
+    margin: 0px;
+    padding: 4px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+
+li a:hover{
+    background: #ffffff;
+    opacity: 1;
+    transition: 300ms;
+    color: #000000;
+
+    font-weight: bold;
+}
+            
 
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    color: #dc143c;
+    color: #ffffff;
+    background: url(https://www.bypeople.com/wp-content/uploads/2015/05/css-dark-chain-background.png);
 
     text-align: center;
 }
 
 
-main p{
+p{
     font-size: 14px;
-
-    text-align: center;
-}
-
-main a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -79,9 +106,34 @@ a#botao button{
     border-color: #000;
     margin-top: 20px;
 
+    background-image: linear-gradient(to right, #003cff 15%, #ffffff  50%, #ff0000  100%);
+    
+    text-align: center;
+    transition: 0.2s;
+    background-size: 200% auto;
+    color: white;            
+
     cursor: pointer;
 }
 
 a#botao button:hover{
-    background-color: #ff4646
+    
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
 }
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+ 
